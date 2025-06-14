@@ -13,7 +13,7 @@ The system addresses the fragmentation of information by offering a centralized,
 | Member Name                               | Matric Number | Module Responsibility                                |
 |-------------------------------------------|---------------|------------------------------------------------------|
 | Harith Razin bin Mohamad                  | S72568        | - User Management (Tourist and Admin)                |
-|                                           |               | - Unplash Management (Tourist)                       |
+|                                           |               | - Unsplash Management (Tourist)                      |
 | Muhammad Nasrul Amin bin Zaidy            | S72404        | - Tourist Attractions Management (Tourist and Admin) |
 |                                           |               | - Weather Management (Tourist)                       |
 | Tengku Nadhir Zahiey bin Tengku Noorisham | S72517        | - Accommodation Management (Tourist and Admin)       |
@@ -51,41 +51,40 @@ The system addresses the fragmentation of information by offering a centralized,
 
 ## 🖼️ System Screenshots
 
-### 🔹 Class Diagram
-![image](https://github.com/user-attachments/assets/e397c217-2b8e-4bf8-8f57-2b651367daf9)
+> 📌 Replace the image URLs below with actual links from [GitHub Issues](https://github.com/razin95/travelGuideGanu/issues) after uploading the images.
 
+### 🔹 Class Diagram
+![Class Diagram](https://user-images.githubusercontent.com/your-id/class-diagram.png)
 
 ### 🔹 Landing Page
-![image](https://github.com/user-attachments/assets/fb78e777-10ea-43dc-8dd3-401ba82220d0)
+![Landing Page](https://user-images.githubusercontent.com/your-id/landing-page.png)
 
-
-### 🔹 Login and Page
-![image](https://github.com/user-attachments/assets/0fb81223-d86d-490c-bdb6-af5432104b71)
-
+### 🔹 Login Page
+![Login Page](https://user-images.githubusercontent.com/your-id/login-page.png)
 
 ### 🔹 Home Page
-![image](https://github.com/user-attachments/assets/d54bae35-756c-4709-8c85-40ab0a23a727)
-
+![Home Page](https://user-images.githubusercontent.com/your-id/home-page.png)
 
 ### 🔹 Weather Page
-![image](https://github.com/user-attachments/assets/d6a98a82-46ac-4731-90b7-4d334fba802f)
-
+![Weather Page](https://user-images.githubusercontent.com/your-id/weather-page.png)
 
 ### 🔹 Tourist Attractions Page
-![image](https://github.com/user-attachments/assets/58bcd2d6-7ab2-4b6e-a636-5912dd0c0017)
-
+![Attractions Page](https://user-images.githubusercontent.com/your-id/attractions-page.png)
 
 ### 🔹 Accommodations Page
-![image](https://github.com/user-attachments/assets/1ebca2de-690b-4ee8-b866-cdf4af79229f)
-
+![Accommodations Page](https://user-images.githubusercontent.com/your-id/accommodations-page.png)
 
 ### 🔹 Image Photo Page
-![image](https://github.com/user-attachments/assets/8969ac4b-860e-4ccb-a86a-a5066cd3067d)
-
+![Image Photo Page](https://user-images.githubusercontent.com/your-id/image-photo-page.png)
 
 ### 🔹 Admin Panel Page
-![image](https://github.com/user-attachments/assets/83dcf51c-7858-4c2f-92b9-56f23eef2013)
-
+![Admin Panel Page](https://user-images.githubusercontent.com/your-id/admin-panel.png)
 
 ---
 
+## 🔗 GitHub Repository & Deployment
+
+- 📁 GitHub Repo: [https://github.com/razin95/travelGuideGanu](https://github.com/razin95/travelGuideGanu)
+- 🌐 Live App: *(If deployed, add your GitHub Pages or production link here)*
+
+---
