@@ -6,17 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add/Edit Accommodation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
         body {
             background: linear-gradient(135deg, #28a745, #74ebd5);
             font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            padding: 40px 20px;
+            overflow-x: hidden;
         }
 
         .form-container {
@@ -26,12 +23,7 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            margin: 20px 0;
-        }
-
-        .form-container:hover {
-            box-shadow: 0 12px 45px rgba(0, 0, 0, 0.15);
+            margin: 0 auto 40px;
         }
 
         h2 {
@@ -57,7 +49,7 @@
         select {
             width: 100%;
             padding: 12px;
-            margin: 8px 0;
+            margin: 8px 0 20px;
             border-radius: 8px;
             border: 2px solid #ddd;
             font-size: 16px;
@@ -90,7 +82,6 @@
             font-size: 16px;
             font-weight: 600;
             transition: background-color 0.3s ease;
-            margin-top: 20px;
             width: 100%;
         }
 
@@ -104,7 +95,6 @@
             color: #28a745;
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
             text-align: center;
             width: 100%;
         }
@@ -142,7 +132,7 @@
         @media (max-width: 768px) {
             .form-container {
                 padding: 20px;
-                width: 90%;
+                width: 95%;
             }
 
             h2 {
@@ -200,9 +190,7 @@
 
             <label for="image">Image Filename (e.g. villa.jpg):</label>
             <input type="text" name="image" id="imageInput" value="${accommodation != null ? accommodation.image : ''}" placeholder="Enter image filename">
-            
-            <label for="image_url">Image Source URL:</label>
-            <input type="url" name="image_url" id="imageUrlInput" value="${accommodation != null ? accommodation.imageUrl : ''}" placeholder="https://example.com/image-source">
+          
             
             <div class="image-preview" id="imagePreview">
                 <c:if test="${not empty accommodation.image}">
@@ -221,56 +209,44 @@
         <a href="AccommodationController?action=list">View All Accommodations List</a>
     </div>
 
-  <script>
-    // Image preview functionality
-    document.getElementById('imageInput').addEventListener('input', function() {
-        updateImagePreview();
-    });
+    <script>
+        document.getElementById('imageInput').addEventListener('input', updateImagePreview);
+        document.getElementById('imageUrlInput').addEventListener('input', updateImagePreview);
 
-    // Update preview when URL changes
-    document.getElementById('imageUrlInput').addEventListener('input', function() {
-        updateImagePreview();
-    });
+        function updateImagePreview() {
+            const imageName = document.getElementById('imageInput').value;
+            const imageUrl = document.getElementById('imageUrlInput').value;
+            const previewDiv = document.getElementById('imagePreview');
 
-    function updateImagePreview() {
-        const imageName = document.getElementById('imageInput').value;
-        const imageUrl = document.getElementById('imageUrlInput').value;
-        const previewDiv = document.getElementById('imagePreview');
-        
-        if (imageName) {
-            // Create elements safely without template literals
-            const link = document.createElement('a');
-            link.href = imageUrl || '#';
-            link.target = '_blank';
-            
-            const img = document.createElement('img');
-            img.src = 'images/' + imageName;
-            img.alt = 'Preview';
-            
-            link.appendChild(img);
-            
-            // Clear previous content
             previewDiv.innerHTML = '';
-            previewDiv.appendChild(link);
-            
-            // Add source link if URL exists
-            if (imageUrl) {
-                const sourceSpan = document.createElement('span');
-                sourceSpan.className = 'image-link';
-                sourceSpan.innerHTML = 'Image Source: ';
-                
-                const sourceLink = document.createElement('a');
-                sourceLink.href = imageUrl;
-                sourceLink.target = '_blank';
-                sourceLink.textContent = 'View Original';
-                
-                sourceSpan.appendChild(sourceLink);
-                previewDiv.appendChild(sourceSpan);
+
+            if (imageName) {
+                const link = document.createElement('a');
+                link.href = imageUrl || '#';
+                link.target = '_blank';
+
+                const img = document.createElement('img');
+                img.src = 'images/' + imageName;
+                img.alt = 'Preview';
+
+                link.appendChild(img);
+                previewDiv.appendChild(link);
+
+                if (imageUrl) {
+                    const sourceSpan = document.createElement('span');
+                    sourceSpan.className = 'image-link';
+                    sourceSpan.innerHTML = 'Image Source: ';
+
+                    const sourceLink = document.createElement('a');
+                    sourceLink.href = imageUrl;
+                    sourceLink.target = '_blank';
+                    sourceLink.textContent = 'View Original';
+
+                    sourceSpan.appendChild(sourceLink);
+                    previewDiv.appendChild(sourceSpan);
+                }
             }
-        } else {
-            previewDiv.innerHTML = '';
         }
-    }
-</script>
+    </script>
 </body>
 </html>

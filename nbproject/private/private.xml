@@ -3,11 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/web/login.jsp</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/src/java/LoginJe/LoginServlet.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/web/index.html</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/web/unsplash.jsp</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/web/add_attraction.jsp</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/web/list_accommodations.jsp</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/web/list_attractions.jsp</file>
             <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/web/add_accommodation.jsp</file>
-            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/src/java/controller/AccommodationController.java</file>
-            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/src/java/model/Accommodation.java</file>
-            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/src/java/dao/AccommodationDAO.java</file>
-            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/src/java/dao/AttractionDAO.java</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/ACER/OneDrive/Documents/SEM%204/WEB/Project/TouristAttractions/web/loginDashboard.jsp</file>
         </group>
     </open-files>
 </project-private>

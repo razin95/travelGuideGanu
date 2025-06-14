@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Accommodation List (Admin)</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600">
+    
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -12,14 +12,14 @@
             background: linear-gradient(135deg, #28a745, #74ebd5);
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            align-items: flex-start;
+            min-height: auto;
         }
 
         .container {
             width: 100%;
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 20px auto 60px;
             background: white;
             padding: 30px;
             border-radius: 12px;
@@ -235,8 +235,7 @@
             <td><%= a.getDescription() %></td>
             <td><%= String.format("%.2f", a.getPrice()) %></td>
             <td>
-                <%= a.getAvailableFrom() != null ? a.getAvailableFrom() : "Not Set" %>
-                to
+                <%= a.getAvailableFrom() != null ? a.getAvailableFrom() : "Not Set" %> to 
                 <%= a.getAvailableTo() != null ? a.getAvailableTo() : "Not Set" %>
             </td>
             <td class="image-cell">

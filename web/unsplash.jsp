@@ -150,7 +150,7 @@
     <h1>📸 Search Photo</h1>
     <form method="get" action="ImageSearchServlet">
         <div class="search-box">
-            <input type="text" name="query" placeholder="Contoh: malaysia, beach, hiking" required>
+            <input type="text" name="query" placeholder="For example: Dungun" required>
             <button type="submit">Search</button>
         </div>
     </form>

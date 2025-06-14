@@ -6,17 +6,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Attractions List</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
   <style>
     body {
       background: linear-gradient(135deg, #28a745, #74ebd5);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-family: 'Montserrat', sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 40px 20px;
+      display: block;
     }
 
     .container {
@@ -26,6 +23,7 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       width: 100%;
       max-width: 1200px;
+      margin: 0 auto 60px;
       color: #333;
     }
 
@@ -37,11 +35,12 @@
       font-weight: 700;
     }
 
-    .btn-container {
+    .nav-buttons {
       display: flex;
       justify-content: space-between;
       gap: 15px;
-      margin-top: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
     }
 
     .back-btn, .add-btn {
@@ -53,6 +52,7 @@
       text-align: center;
       width: 45%;
       transition: background-color 0.3s ease;
+      font-weight: 600;
     }
 
     .back-btn {
@@ -108,16 +108,31 @@
       transform: scale(1.05);
     }
 
+    .image-link {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .image-link:hover {
+      text-decoration: underline;
+    }
+
     .btn-container {
       display: flex;
-      gap: 15px;
+      gap: 10px;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     .edit-btn, .delete-btn {
       padding: 8px 15px;
       border-radius: 5px;
       font-size: 1rem;
+      font-weight: 500;
+      text-align: center;
+      min-width: 80px;
+      text-decoration: none;
     }
 
     .edit-btn {
@@ -138,21 +153,10 @@
       background-color: #b02a37;
     }
 
-    .image-link {
-      color: #007bff;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .image-link:hover {
-      text-decoration: underline;
-    }
-
     @media (max-width: 768px) {
       table {
-        width: 100%;
-        overflow-x: auto;
         display: block;
+        overflow-x: auto;
       }
 
       th, td {
@@ -167,11 +171,12 @@
       h1 {
         font-size: 2rem;
       }
-      
-      .btn-container {
+
+      .nav-buttons {
         flex-direction: column;
+        gap: 10px;
       }
-      
+
       .back-btn, .add-btn {
         width: 100%;
       }
@@ -239,12 +244,10 @@
       </tbody>
     </table>
 
-    <div class="btn-container">
+    <div class="nav-buttons">
       <a href="managerDashboard.jsp" class="back-btn">← Back to Manager Dashboard</a>
       <a href="add_attraction.jsp" class="add-btn">+ Add New Attraction</a>
     </div>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

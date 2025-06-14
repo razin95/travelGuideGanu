@@ -16,13 +16,16 @@
         <servlet-class>Servlet.ImageSearchServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ForgotPasswordServlet</servlet-name>
-        <servlet-class>Servlet.ForgotPasswordServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ResetPasswordServlet</servlet-name>
-        <servlet-class>Servlet.ResetPasswordServlet</servlet-class>
-    </servlet>
+    <servlet-name>ForgotPasswordServlet</servlet-name>
+    <servlet-class>Servlet.ForgotPasswordServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ForgotPasswordServlet</servlet-name>
+    <url-pattern>/ForgotPasswordServlet</url-pattern>
+</servlet-mapping>
+
+
+  
     <servlet-mapping>
         <servlet-name>profileServlet</servlet-name>
         <url-pattern>/profileServlet</url-pattern>
@@ -35,14 +38,7 @@
         <servlet-name>ImageSearchServlet</servlet-name>
         <url-pattern>/ImageSearchServlet</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ForgotPasswordServlet</servlet-name>
-        <url-pattern>/ForgotPasswordServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ResetPasswordServlet</servlet-name>
-        <url-pattern>/ResetPasswordServlet</url-pattern>
-    </servlet-mapping>
+
     <session-config>
         <session-timeout>
             30

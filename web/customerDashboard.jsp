@@ -321,31 +321,16 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="image/1.jpg" class="d-block w-100" alt="Beautiful Beach">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Discover Paradise Beaches</h5>
-                                <p>Explore the most beautiful coastal destinations with crystal clear waters</p>
-                            </div>
+
                         </div>
                         <div class="carousel-item">
                             <img src="image/2.jpg" class="d-block w-100" alt="Luxury Hotel">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Luxury Accommodations</h5>
-                                <p>Find the perfect place to stay during your travels</p>
-                            </div>
+
                         </div>
-                        <div class="carousel-item">
-                            <img src="image/3.jpg" class="d-block w-100" alt="Mountain View">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Breathtaking Mountain Views</h5>
-                                <p>Experience nature at its finest with our mountain destinations</p>
-                            </div>
-                        </div>
+
                         <div class="carousel-item">
                             <img src="image/4.jpg" class="d-block w-100" alt="Cozy Cabin">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Cozy Getaways</h5>
-                                <p>Perfect retreats for romantic or family vacations</p>
-                            </div>
+
                         </div>
                     </div>
                     

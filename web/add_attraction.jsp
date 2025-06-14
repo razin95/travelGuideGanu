@@ -163,11 +163,7 @@
                        value="${attraction.image}" placeholder="Enter image filename">
             </div>
 
-            <div>
-                <label for="image_url"> Source URL:</label>
-                <input type="url" id="image_url" name="image_url" 
-                       value="${attraction.imageUrl}" placeholder="https://example.com/image.jpg">
-            </div>
+          
 
 
 

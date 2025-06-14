@@ -165,57 +165,9 @@
             color: #007bff;
         }
 
-        /* Dark mode toggle */
-        .dark-mode-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #333;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 100;
-        }
-
-        /* Dark mode styles */
-        body.dark-mode {
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-
-        body.dark-mode .login-container {
-            background-color: #1e1e1e;
-            border-color: #444;
-            color: #e0e0e0;
-        }
-
-        body.dark-mode h2,
-        body.dark-mode label,
-        body.dark-mode .links a {
-            color: #e0e0e0;
-        }
-
-        body.dark-mode input[type="text"],
-        body.dark-mode input[type="password"] {
-            background-color: #2d2d2d;
-            border-color: #444;
-            color: #e0e0e0;
-        }
-
-        body.dark-mode .links a:hover {
-            color: #fff;
-        }
     </style>
 </head>
 <body>
-    <button class="dark-mode-toggle" title="Toggle Dark Mode">🌓</button>
-    
     <div class="login-container">
         <h2>Login</h2>
         <p class="welcome-message">Welcome! Please login to continue.</p>
@@ -250,7 +202,6 @@
 
         <div class="links">
             <a href="signup.jsp">Don't have an account? Register here</a>
-            <a href="forgot-password.jsp">Forgot Password?</a>
         </div>
     </div>
 
@@ -265,21 +216,33 @@
                 password.setAttribute('type', type);
                 this.textContent = type === 'password' ? 'Show' : 'Hide';
             });
-            
-            // Dark mode toggle
-            const darkModeToggle = document.querySelector('.dark-mode-toggle');
-            darkModeToggle.addEventListener('click', function() {
-                document.body.classList.toggle('dark-mode');
-                const isDarkMode = document.body.classList.contains('dark-mode');
-                localStorage.setItem('darkMode', isDarkMode);
-                this.textContent = isDarkMode ? '🌞' : '🌙';
-            });
-            
-            // Check for saved dark mode preference
-            if (localStorage.getItem('darkMode') === 'true') {
-                document.body.classList.add('dark-mode');
-                darkModeToggle.textContent = '🌞';
+
+            // Handle "Remember Me" functionality
+            const rememberMeCheckbox = document.querySelector('#remember');
+            const usernameInput = document.querySelector('#username');
+            const passwordInput = document.querySelector('#password');
+
+            // Check if username is saved in localStorage
+            const savedUsername = localStorage.getItem('savedUsername');
+            const savedPassword = localStorage.getItem('savedPassword');
+
+            // If username and password are saved, autofill the inputs
+            if (savedUsername && savedPassword) {
+                usernameInput.value = savedUsername;
+                passwordInput.value = savedPassword;
+                rememberMeCheckbox.checked = true;
             }
+
+            // When the form is submitted, save the credentials if 'Remember Me' is checked
+            document.querySelector('#loginForm').addEventListener('submit', function() {
+                if (rememberMeCheckbox.checked) {
+                    localStorage.setItem('savedUsername', usernameInput.value);
+                    localStorage.setItem('savedPassword', passwordInput.value);
+                } else {
+                    localStorage.removeItem('savedUsername');
+                    localStorage.removeItem('savedPassword');
+                }
+            });
         });
     </script>
 </body>
