@@ -13,7 +13,7 @@ The system addresses the fragmentation of information by offering a centralized,
 | Member Name                               | Matric Number | Module Responsibility                                |
 |-------------------------------------------|---------------|------------------------------------------------------|
 | Harith Razin bin Mohamad                  | S72568        | - User Management (Tourist and Admin)                |
-|                                           |               | - Unsplash Management (Tourist)                      |
+|                                           |               | - Unplash Management (Tourist)                       |
 | Muhammad Nasrul Amin bin Zaidy            | S72404        | - Tourist Attractions Management (Tourist and Admin) |
 |                                           |               | - Weather Management (Tourist)                       |
 | Tengku Nadhir Zahiey bin Tengku Noorisham | S72517        | - Accommodation Management (Tourist and Admin)       |
@@ -51,40 +51,11 @@ The system addresses the fragmentation of information by offering a centralized,
 
 ## 🖼️ System Screenshots
 
-> 📌 Replace the image URLs below with actual links from [GitHub Issues](https://github.com/razin95/travelGuideGanu/issues) after uploading the images.
-
 ### 🔹 Class Diagram
-![Class Diagram](https://user-images.githubusercontent.com/your-id/class-diagram.png)
+![image](https://github.com/user-attachments/assets/e397c217-2b8e-4bf8-8f57-2b651367daf9)
 
-### 🔹 Landing Page
-![Landing Page](https://user-images.githubusercontent.com/your-id/landing-page.png)
-
-### 🔹 Login Page
-![Login Page](https://user-images.githubusercontent.com/your-id/login-page.png)
-
-### 🔹 Home Page
-![Home Page](https://user-images.githubusercontent.com/your-id/home-page.png)
-
-### 🔹 Weather Page
-![Weather Page](https://user-images.githubusercontent.com/your-id/weather-page.png)
-
-### 🔹 Tourist Attractions Page
-![Attractions Page](https://user-images.githubusercontent.com/your-id/attractions-page.png)
-
-### 🔹 Accommodations Page
-![Accommodations Page](https://user-images.githubusercontent.com/your-id/accommodations-page.png)
-
-### 🔹 Image Photo Page
-![Image Photo Page](https://user-images.githubusercontent.com/your-id/image-photo-page.png)
-
-### 🔹 Admin Panel Page
-![Admin Panel Page](https://user-images.githubusercontent.com/your-id/admin-panel.png)
 
 ---
 
-## 🔗 GitHub Repository & Deployment
 
-- 📁 GitHub Repo: [https://github.com/razin95/travelGuideGanu](https://github.com/razin95/travelGuideGanu)
-- 🌐 Live App: *(If deployed, add your GitHub Pages or production link here)*
-
----
+why the picture is the same under screenshot section?
