@@ -57,13 +57,10 @@ The system addresses the fragmentation of information by offering a centralized,
 
 ### 🔹 Landing Page
 ![image](https://github.com/user-attachments/assets/fb78e777-10ea-43dc-8dd3-401ba82220d0)
-![image](https://github.com/user-attachments/assets/851f5a74-ead5-44f8-ae6d-3be7e064b941)
-![image](https://github.com/user-attachments/assets/5088a11f-8a08-4ce4-b996-22b25d0557b4)
 
 
-### 🔹 Login and Registration Page
+### 🔹 Login and Page
 ![image](https://github.com/user-attachments/assets/0fb81223-d86d-490c-bdb6-af5432104b71)
-![image](https://github.com/user-attachments/assets/58eb42dd-03e8-47cb-bbf9-9099492161d3)
 
 
 ### 🔹 Home Page
@@ -71,7 +68,6 @@ The system addresses the fragmentation of information by offering a centralized,
 
 
 ### 🔹 Weather Page
-![image](https://github.com/user-attachments/assets/73775266-5282-4276-9c5d-4d2a5f9cf01e)
 ![image](https://github.com/user-attachments/assets/d6a98a82-46ac-4731-90b7-4d334fba802f)
 
 
@@ -84,16 +80,12 @@ The system addresses the fragmentation of information by offering a centralized,
 
 
 ### 🔹 Image Photo Page
-![image](https://github.com/user-attachments/assets/c4d58a61-e812-4afb-8ae5-240b62500b7b)
 ![image](https://github.com/user-attachments/assets/8969ac4b-860e-4ccb-a86a-a5066cd3067d)
 
 
 ### 🔹 Admin Panel Page
-![image](https://github.com/user-attachments/assets/788d9efb-5635-4bed-87ac-9411646679b7)
-![image](https://github.com/user-attachments/assets/2d248bdf-fe80-4c1c-bd1a-f67407e7b504)
 ![image](https://github.com/user-attachments/assets/83dcf51c-7858-4c2f-92b9-56f23eef2013)
-![image](https://github.com/user-attachments/assets/7c0e6cfa-7a29-4585-ba29-9f0aebed6ecd)
-![image](https://github.com/user-attachments/assets/17972d44-f49b-4488-989e-e9e8f5a832f3)
+
 
 ---
 
