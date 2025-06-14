@@ -54,52 +54,5 @@ The system addresses the fragmentation of information by offering a centralized,
 ### 🔹 Class Diagram
 ![image](https://github.com/user-attachments/assets/e397c217-2b8e-4bf8-8f57-2b651367daf9)
 
-## 📂 Folder Structure
-VisitTerengganu/
-│
-├── README.md                       
-├── index.html                      
-│
-├── /assets/                        
-│   ├── class-diagram.png
-│   ├── landing-page.png
-│   ├── login-page.png
-│   ├── home-page.png
-│   ├── weather-page.png
-│   ├── attractions-page.png
-│   ├── accommodations-page.png
-│   ├── image-photo-page.png
-│   └── admin-panel.png
-│
-├── /sql/                          
-│   └── visit_terengganu.sql        
-│
-├── /src/                          
-│   ├── controller/                
-│   ├── model/                      
-│   └── DBConnection.java           
-│
-├── /web/                           # Web content
-│   ├── login.jsp
-│   ├── register.jsp
-│   ├── dashboard.jsp
-│   ├── add_accommodation.jsp
-│   ├── add_attraction.jsp
-│   ├── accommodation_list.jsp
-│   ├── attraction_list.jsp
-│   └── error.jsp
-│
-├── /web/images/                    # Static images used in the website
-│   ├── default.jpg
-│   └── ...
-│
-├── /web/css/                      
-│   └── style.css
-│
-│
-└── /WEB-INF/                       # Deployment descriptor
-    └── web.xml
-
-
 
 
